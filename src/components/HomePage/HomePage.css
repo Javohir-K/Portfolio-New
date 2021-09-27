@@ -1,6 +1,27 @@
 .homepage{
-    background: url(../../images/bg-paterns.png);
-    background-position: center;
-    background-size: cover;
-    background-color: var(--bg-dark);
+    z-index: 111;
+    position: relative;
 }
+
+
+.bg-line1, .bg-line2,.bg-line3,.bg-line4,.bg-line5{
+    position: absolute;
+    top: 0;
+    left: 10%;
+    height: 100%;
+    width: 1px;
+    z-index: -1;
+    background-color: rgba(255, 255, 255, 0.03);
+  }
+  .bg-line2{
+      left: 30%;
+  }
+  .bg-line3{
+      left: 50%;
+  }
+  .bg-line4{
+      left: 70%;
+  }
+  .bg-line5{
+      left: 90%;
+  }

@@ -9,7 +9,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 12%;
+    /* padding-left: 12%; */
     overflow: hidden;
 }
 .back-image{
@@ -145,3 +145,4 @@
         transform: translateY(0px);
     }
 }
+

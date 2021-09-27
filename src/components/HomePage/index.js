@@ -20,6 +20,13 @@ function index() {
         <ResumePage/>
         <ContactPage/>
         <SocialIcons/>
+      <div className="bg-line1"></div>
+      <div className="bg-line2"></div>
+      <div className="bg-line3"></div>
+      <div className="bg-line4"></div>
+      <div className="bg-line5"></div>
+
+
         </div>
     )
 }

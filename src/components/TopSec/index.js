@@ -10,7 +10,7 @@ function index() {
     const x = document.getElementById("BImg");
     var value = window.scrollY;
 
-    x.style.top = value * 0.05 + "px";
+    x.style.top = value * 0.2 + "px";
 
     // x.style.transform= `translateY(${value})`;
   });

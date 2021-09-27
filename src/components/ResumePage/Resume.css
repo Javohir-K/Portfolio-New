@@ -5,6 +5,7 @@
     margin-top: 80px;
 }
 .resume-card{
+    width: 100%;
     flex: 1;
     position: relative;
     padding: 20px;

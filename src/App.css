@@ -1,31 +1,37 @@
-.app{
+.app {
   background: url(./images/bg-paterns.png);
   color: var(--fontlight);
+  /* background-position: center; */
+  /* background-size: cover; */
   overflow: hidden;
   scroll-behavior: smooth;
   position: relative;
 }
 
-.container{
+.container {
   padding: 0 7%;
+  z-index: 11;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   width: 5px;
   background-color: #191a1c;
 }
-::-webkit-scrollbar-thumb{
+
+::-webkit-scrollbar-thumb {
   background-color: var(--bg-red);
   border-radius: 10px;
 
 }
 
-h2.title{
-  font-family: 'Nunito',sans-serif;
+h2.title {
+  font-family: 'Nunito', sans-serif;
   font-size: 2rem;
-position: relative;
+  position: relative;
   width: fit-content;
 }
-h2.title::after{
+
+h2.title::after {
   content: '';
   position: absolute;
   bottom: -5px;
@@ -33,9 +39,10 @@ h2.title::after{
   width: 20px;
   height: 4px;
   border-radius: 0 10px 0 0;
-  background-color:var(--bg-red);
+  background-color: var(--bg-red);
 }
-h2.title::before{
+
+h2.title::before {
   content: '';
   position: absolute;
   border-radius: 0 0 0 10px;
@@ -46,7 +53,7 @@ h2.title::before{
   background-color: var(--bg-red);
 }
 
-.btn-scroll{
+.btn-scroll {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -64,7 +71,7 @@ h2.title::before{
   cursor: pointer;
 }
 
-.cursor-p{
+.cursor-p {
   pointer-events: none;
   position: absolute;
   width: 24px;
@@ -80,7 +87,8 @@ h2.title::before{
   border: 1px solid var(--fontlighter);
   animation: cursorAnim 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
 }
-.cursor-inner{
+
+.cursor-inner {
   opacity: 0.5;
   width: 8px;
   height: 8px;
@@ -90,14 +98,191 @@ h2.title::before{
 }
 
 @keyframes cursorAnim {
-  0%{
-      transform: scale(1);
+  0% {
+    transform: scale(1);
   }
-  50%{
-      transform: scale(1.2);
+
+  50% {
+    transform: scale(1.2);
 
   }
-  100%{
-      transform: scale(1);
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 900px) {
+  
+  .job {
+    font-size: 56px !important;
+  }
+  .contact-info{
+    flex-direction: column;
+  }
+  .contact-card{
+    margin: 10px 0;
+  }
+  .aboutme-inner{
+    flex-direction: column;
+  }
+  .services-cards{
+    flex-direction: column;
+  }
+  .scard:nth-of-type(2){
+    margin: 20px 0 !important;
+    transform: translateY(0px) !important;
+  }
+  .services-counter{
+    padding: 15px !important;
+    margin-top: 80px !important;
+  }
+  .services-counter-inner{
+    padding: 20px !important;
+  }
+  .scounter p{
+    font-size: 1.5rem !important;
+  }
+  .scounter p span{
+    font-size: 1.2rem !important;
+  }
+  .scounter h3{
+    font-size: 1rem !important;
+  }
+  .projects-flex1, .projects-flex2{
+    flex-direction: column;
+  }
+  .resume-inner{
+    flex-direction: column;
+  }
+  .resume-card:nth-of-type(2){
+    margin: 20px 0 !important;
+    transform: translateY(0) !important;
+  }
+  .cpage-info{
+    flex-direction: column;
+  }
+  .c-info{
+    flex: 1;
+  }
+  .cursor-p{
+    display: none;
+  }
+
+}
+@media screen and (max-width: 500px) {
+    h2.title{
+      font-size: 1.2rem;
+    }
+    .header{
+      height: 40px !important;
+    }
+    img.header-logo{
+      width: 30px !important;
+    }
+    .nav-button{
+      width: 30px !important;
+      height: 16px !important;
+    }
+    .item1,.item2,.item3{
+      border-top: 2px solid var(--fontlighter) !important;
+    }
+    .item1t {
+      transform: rotate(45deg) translate(7px, 3px) !important;
+  }
+  
+  .item3t {
+      transform: rotate(-45deg) translate(7px, -3px) !important;
+  }
+  .dev-img{
+    display: none;
+  }
+  .top-sec-inner{
+    padding-left: 10% !important;
+  }
+  .job{
+    font-size: 24px !important;
+    line-height: normal !important;
+  }
+  .container{
+    padding: 0 10px !important;
+  }
+  .aboutme-inner{
+    padding-top: 20px !important;
+  }
+  .aboutme-image img{
+    width: 100% !important;
+    height: auto !important;
+  }
+  .aboutme-info{
+    padding: 10px !important;
+  }
+  .hireme{
+    font-size: 14px !important;
+    padding: 10px !important;
+  }
+  .services-counter{
+    padding: 5px !important;
+    margin-top: 40px !important;
+  }
+  .services-counter-inner{
+    padding: 10px !important;
+    align-items: flex-start !important;
+    /* flex-direction: column; */
+  }
+  .services-counter-inner p{
+    font-size: 16px !important;
+  }
+  .services-counter-inner h3{
+    font-size: 12px !important;
+  }
+  .project-card{
+    margin: 10px 5px !important;
+  }
+  .resume-inner{
+    margin-top: 40px !important;
+  }
+  .resume-card h2{
+    font-size: 18px !important;
+  }
+  .resume-card>p, .resume-card-info>p{
+    font-size: 14px !important;
+  }
+  .contactpage{
+    margin-top: 40px !important;
+  }
+  .cpage-info{
+    align-items: flex-start !important;
+  }
+  .c-info{
+    font-size: 14px !important;
+  }
+  .social{
+    position: relative !important;
+    width: 100%;
+    padding: 0 7%;
+    left: 0 !important;
+    top: 0 !important;
+  }
+  .social-inner{
+    justify-content: space-between;
+    flex-direction: row !important;
+  }
+  .social-inner span,.social-inner p{
+    display: none;
+  }
+  .social-inner a{
+    /* width: 50px; */
+    /* height: 50px; */
+    padding: 0 10px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: var(--bg-red);
+  }
+  .footer{
+    font-size: 12px !important;
+  }
+  .nav-big-inner a,.nav-big-inner a span{
+    font-size: 18px !important;
   }
 }

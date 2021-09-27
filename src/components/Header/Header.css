@@ -50,7 +50,7 @@ img.header-logo {
 .item2,
 .item3 {
     width: 20px;
-    border-top: 3px solid white;
+    border-top: 3px solid var(--fontlighter);
     transition: 0.3s ease-in;
 }
 

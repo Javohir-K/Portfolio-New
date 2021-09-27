@@ -1,17 +1,17 @@
-.aboutme{
-    /* height: 100vh; */
-}
+
 .aboutme .title{
     margin-top: 40px;
 }
 .aboutme-inner{
+    justify-content: center;
+    align-items: center;
     display: flex;
     padding-top: 80px;
 }
 .aboutme-image{
     width: fit-content;
     height: fit-content;
-    /* flex: 1; */
+    flex: 1;
     padding: 15px;
     border: 1px solid #222;
 }
