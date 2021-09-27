@@ -1,0 +1,103 @@
+.app{
+  background: url(./images/bg-paterns.png);
+  color: var(--fontlight);
+  overflow: hidden;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.container{
+  padding: 0 7%;
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: #191a1c;
+}
+::-webkit-scrollbar-thumb{
+  background-color: var(--bg-red);
+  border-radius: 10px;
+
+}
+
+h2.title{
+  font-family: 'Nunito',sans-serif;
+  font-size: 2rem;
+position: relative;
+  width: fit-content;
+}
+h2.title::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  right: 0;
+  width: 20px;
+  height: 4px;
+  border-radius: 0 10px 0 0;
+  background-color:var(--bg-red);
+}
+h2.title::before{
+  content: '';
+  position: absolute;
+  border-radius: 0 0 0 10px;
+  bottom: -5px;
+  right: 25px;
+  width: 40px;
+  height: 4px;
+  background-color: var(--bg-red);
+}
+
+.btn-scroll{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1111;
+  outline: none;
+  /* padding: 10px; */
+  width: 50px;
+  height: 50px;
+  /* background: var(--bg-darker); */
+  background: transparent;
+  border: 1px solid var(--dark);
+  color: var(--fontlighter);
+  font-size: 24px;
+  display: none;
+  cursor: pointer;
+}
+
+.cursor-p{
+  pointer-events: none;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 111111111;
+  transition: .1s;
+  border: 1px solid var(--fontlighter);
+  animation: cursorAnim 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+}
+.cursor-inner{
+  opacity: 0.5;
+  width: 8px;
+  height: 8px;
+  animation: cursorAnim 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) infinite;
+  border-radius: 50%;
+  background-color: var(--bg-red);
+}
+
+@keyframes cursorAnim {
+  0%{
+      transform: scale(1);
+  }
+  50%{
+      transform: scale(1.2);
+
+  }
+  100%{
+      transform: scale(1);
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  background-color: #191a1c;
+  font-family: 'Saira', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Saira', sans-serif;
+  font-weight: 700 !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --bg-dark: #191a1c;
+  --bg-red: #ff3d4f;
+  --bg-yellow: #fada73;
+  --bg-blue: #2ebac9;
+  --fontlight: #9da1a5;
+  --bg-darker: #1d1e20;
+  --fontlighter: #f1f1f1;
+  --dark: #4f4f4f;
+}
+
+::selection {
+  color: var(--bg-red);
+}

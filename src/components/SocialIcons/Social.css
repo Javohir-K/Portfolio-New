@@ -1,0 +1,36 @@
+.social{
+    position: fixed;
+    left: 10px;
+    top: 35%;
+    z-index: 100;
+}
+.social-inner{
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+.social-inner .fab{
+    margin: 7px 0;
+    font-size: 18px;
+    transition: 0.2s ease-in;
+}
+.social-inner span{
+    margin-bottom: 7px;
+    width: 1px;
+    opacity: 0.7;
+    height: 50px;
+    border-left: 1px solid var(--fontlighter);
+}
+.social-inner p{
+    user-select: none;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    color: var(--fontlighter);
+}
+.social-inner a{
+    text-decoration: none;
+    color: var(--fontlighter);
+}
+.social-inner .fab:hover{
+    transform: scale(1.5);
+}

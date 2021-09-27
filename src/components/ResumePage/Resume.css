@@ -1,0 +1,43 @@
+.resume-inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 80px;
+}
+.resume-card{
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    background-color: var(--bg-darker);
+}
+.resume-card:nth-of-type(1){
+    border-top: 3px solid var(--bg-red);
+
+}
+.resume-card:nth-of-type(2){
+    margin: 0 30px;
+    border-top: 3px solid var(--bg-yellow);
+    transform: translateY(40px);
+
+}
+.resume-card:nth-of-type(3){
+    border-top: 3px solid var(--bg-blue);
+
+}
+.resume-card> h2{
+    color: var(--fontlighter);
+}
+.resume-card >p{
+    padding: 20px 0;
+}
+.resume-card-info{
+    margin-top: 10px;
+}
+.resume-card-info h4{
+    color: var(--fontlighter);
+    font-weight: 500 !important;
+}
+.resume-card-info p{
+    padding: 5px 0;
+    font-family: 'Nunito',sans-serif;
+}
