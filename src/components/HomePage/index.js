@@ -19,6 +19,7 @@ function index() {
         <ProjectsPage/>
         <ResumePage/>
         <ContactPage/>
+        <ScrollTop />
         <SocialIcons/>
       <div className="bg-line1"></div>
       <div className="bg-line2"></div>
@@ -30,5 +31,27 @@ function index() {
         </div>
     )
 }
+
+const ScrollTop = () => {
+  function ScrollToTop() {
+    window.scrollTo(0, 0);
+  }
+  window.addEventListener("scroll", function () {
+    const x = document.getElementById("BtnScroll");
+    let val = window.scrollY;
+
+    if (val > 400) {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  });
+  return (
+    <button id="BtnScroll" className="btnscrolltop" onClick={ScrollToTop}>
+      <i className="fa fa-angle-up"></i>
+    </button>
+  );
+};
+
 
 export default index

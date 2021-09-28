@@ -55,15 +55,6 @@ function Header() {
     
     }
   }
-  function LinkClick (){
-    var e = document.getElementById("navBig");
-    if(e.classList.contains("nav-Big-show")){
-      e.classList.remove("nav-Big-show")
-    }
-    else if (!e.classList.contains("nav-Big-show")){
-      e.classList.add("nav-Big-show")
-    }
-  }
   return (
     <div className="header">
       <div className="header-inner" id="navbar">
