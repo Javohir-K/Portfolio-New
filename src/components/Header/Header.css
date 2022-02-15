@@ -21,7 +21,7 @@
 }
 
 .header-bg, .header-b {
-    box-shadow: 1px 1px  10px rgba(0, 0,0,0.4);
+    /* box-shadow: 1px 1px  10px rgba(0, 0,0,0.4); */
     z-index: 111;
     background-color: var(--bg-darker);
 }
@@ -74,12 +74,12 @@ img.header-logo {
 .nav-main-dark {
     position: absolute;
     transform: scaleX(0) scaleY(0);
-    height: 3000px;
-    width: 3000px;
+    height: 3500px;
+    width: 3500px;
     top: 0;
     right: 0;
-    top: -1400px;
-    right: -1400px;
+    top: -1700px;
+    right: -1700px;
     z-index: 11;
     border-radius: 50%;
     transition: 0.3s ease-in;
@@ -90,12 +90,12 @@ img.header-logo {
 .nav-main-red {
     position: absolute;
     transform: scaleX(0) scaleY(0);
-    height: 3000px;
-    width: 3000px;
+    height: 3500px;
+    width: 3500px;
     top: 0;
     right: 0;
-    top: -1400px;
-    right: -1400px;
+    top: -1700px;
+    right: -1700px;
     z-index: 11111;
     border-radius: 50%;
     transition: 0.3s ease-in;

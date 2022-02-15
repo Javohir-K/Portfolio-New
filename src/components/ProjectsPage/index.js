@@ -10,7 +10,7 @@ import Img5 from "../../images/dopegraphers.jpg"
 
 function index() {
   return (
-    <div className="projects-wrapper container" id="projects">
+    <div  className="projects-wrapper container" id="projects">
       <div className="projects-top">
         <h2 className="title">Projects</h2>
         <a
@@ -41,6 +41,7 @@ function index() {
         </div>
         <div className="projects-flex2">
         <ProjectCard
+       
           img={Img3}
           title="Movie Search DB"
           info="Search your favorite movie"
@@ -59,6 +60,7 @@ function index() {
           link="https://dopegraphers.netlify.app/"
           />
         </div>
+        
       </div>
     </div>
   );
@@ -73,7 +75,7 @@ const ProjectCard = ({ img, title, info, link }) => {
         <p>{info}</p>
       </div>
       <a href={link} className="card-link" target="_blank" rel="noreferrer">
-        <i class="fas fa-eye"></i>
+        <i className="fas fa-eye"></i>
       </a>
     </div>
   );

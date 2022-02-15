@@ -15,10 +15,13 @@ function App() {
       <div className="bg-line3"></div>
       <div className="bg-line4"></div>
       <div className="bg-line5"></div>
-
+        <div className="btn-wrapper">
+          <div className="btn-animation"></div>
+          {/* <div className="btn-animation1"></div> */}
         <button className="intro-btn" onClick={WelcomeBtn}>
           javokhir
         </button>
+        </div>
       </div>
       <div className="overlay" id="overlay"></div>
       <div className="app-inner" id="appMain">

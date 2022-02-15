@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.1d4bb136.chunk.css",
+    "main.js": "/static/js/main.7992e6a5.chunk.js",
+    "main.js.map": "/static/js/main.7992e6a5.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.8e4f1d52.js",
+    "runtime-main.js.map": "/static/js/runtime-main.8e4f1d52.js.map",
+    "static/js/2.667bd434.chunk.js": "/static/js/2.667bd434.chunk.js",
+    "static/js/2.667bd434.chunk.js.map": "/static/js/2.667bd434.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.1d4bb136.chunk.css.map": "/static/css/main.1d4bb136.chunk.css.map",
+    "static/js/2.667bd434.chunk.js.LICENSE.txt": "/static/js/2.667bd434.chunk.js.LICENSE.txt",
+    "static/media/222.919e2c6c.png": "/static/media/222.919e2c6c.png",
+    "static/media/App.css": "/static/media/bg-paterns.ce20abc7.png",
+    "static/media/bimg.533e48d1.jpg": "/static/media/bimg.533e48d1.jpg",
+    "static/media/developer.5ba63794.png": "/static/media/developer.5ba63794.png",
+    "static/media/dopegraphers.9a384c32.jpg": "/static/media/dopegraphers.9a384c32.jpg",
+    "static/media/fb.92eec24d.jpeg": "/static/media/fb.92eec24d.jpeg",
+    "static/media/movie.b9c1c06b.jpg": "/static/media/movie.b9c1c06b.jpg",
+    "static/media/pizza-king.fb99c5fd.jpg": "/static/media/pizza-king.fb99c5fd.jpg",
+    "static/media/traveluzb.40c058bb.jpg": "/static/media/traveluzb.40c058bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e4f1d52.js",
+    "static/js/2.667bd434.chunk.js",
+    "static/css/main.1d4bb136.chunk.css",
+    "static/js/main.7992e6a5.chunk.js"
+  ]
+}
